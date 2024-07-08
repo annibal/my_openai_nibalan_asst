@@ -22,7 +22,7 @@ def handle_tool_call(fn_name, fn_args):
     results = get_hp_information(fn_args)
 
   if fn_name == "get_website":
-    get_website(fn_args)
+    results = get_website(fn_args)
 
   if fn_name == "get_trials":
     results = list_trials(fn_args)
