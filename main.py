@@ -43,6 +43,7 @@ def main():
         }
         messages.append(tool_msg)
         print(f_pretty_print(tool_msg))
+        
       # end for tool_call_cfg in tool_calls
 
       # get a new response from the model where it can see the function(s) response
@@ -55,5 +56,7 @@ def main():
       print(f_pretty_print(message_with_tool_call))
 
     # end if tool_calls
+
+  # end while True
 
 main()

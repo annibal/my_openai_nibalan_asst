@@ -20,7 +20,7 @@ Python code to chat with GPT via terminal prompt
 - Install python requirements:
 
   ```shell
-  pip install scipy tenacity tiktoken termcolor openai
+  pip install -r requirements.txt
   ```
 
 - Run the main file:
