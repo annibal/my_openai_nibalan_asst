@@ -17,6 +17,9 @@ def main():
       break;
     messages.append(user_message)
 
+    if user_message["role"] == "system":
+      print(f_pretty_print(user_message))
+
     chat_response = chat_completion_request(messages, 
       model=nb['model'],
       top_p=nb['top_p'],

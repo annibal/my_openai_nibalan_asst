@@ -13,7 +13,11 @@ def print_header():
   
 def read_prompt_message():
   try:
-    user_input = input(f"{colored(f'⮚ You', 'green')}: ")
+    user_input = input(f"{colored(f'⮚ You', 'green')}: ").strip()
+    
+    if user_input.lower().startswith("system: "):
+      return {"role": "system", "content": user_input.removeprefix("system: ")}
+    
     return {"role": "user", "content": user_input}
   except KeyboardInterrupt as e:
     print(colored("\n ⮡  exit \n", "light_grey"))
@@ -30,6 +34,18 @@ def f_pretty_print(message):
         msg += ": "
         msg += str(message['content'])
         return msg
+      
+      if message["role"] == "assistant":
+        role = colored("⋖ Assistant", "blue")
+        return f"{role}: {message['content']}"
+      
+      if message["role"] == "user":
+        role = colored(f'⮚ You', 'green')
+        return f"{role}: {message['content']}"
+      
+      if message["role"] == "system":
+        role = colored(f'⟚ System', 'red')
+        return f"{role}: {message['content']}"
     
     if message.role == "tool":
       msg = colored(f'🞚 Tool Result', 'yellow')
@@ -60,7 +76,7 @@ def f_pretty_print(message):
       return f"{role}: {message.content}"
     
     if message.role == "system":
-      role = colored(f'⮚ System', 'red')
+      role = colored(f'⟚ System', 'red')
       return f"{role}: {message.content}"
   except Exception as e:
     print(colored("Error:", "red"))
