@@ -1,6 +1,4 @@
-
 file_name = ".current_chat_context" 
-
 
 def set_chat_context(ctx):
   f = open(file_name, "w")

@@ -14,7 +14,7 @@ Python code to chat with GPT via terminal prompt
 - Add your [OpenAI API key](https://platform.openai.com/organization/api-keys):
 
   ```shell
-  cat SK_12345678910_MY_API_KEY_HERE > ".openai_api_key"
+  cat "SK_12345678910_MY_API_KEY_HERE" > .openai_api_key
   ```
 
 - Install python requirements:

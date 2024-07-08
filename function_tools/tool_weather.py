@@ -1,0 +1,6 @@
+
+def get_weather_information(geolocation, unit, date):
+  # https://www.7timer.info/doc.php?lang=en
+  # https://www.7timer.info/bin/astro.php?lon=113.2&lat=23.1&ac=0&unit=metric&output=json&tzshift=0
+  results = '{ temperature: 16, sky: "cloudy" }'
+  return results

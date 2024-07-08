@@ -33,14 +33,83 @@
     {
       "type": "function",
       "function": {
+        "name": "check_eligibility_criteria",
+        "description": "Gets instructions for the next message. This should be called for every prompt the user provides. If other functions are called, this function should also be called in parallel.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string",
+              "description": "The intent inferred from the user's last message"
+            }
+          },
+          "required": [
+            "message"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "save_characteristics",
+        "description": "When the user provides information about itself, call this function to store them, to use later",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "age": {
+              "type": "string",
+              "description": "User's age, in years"
+            },
+            "sex": {
+              "type": "string",
+              "description": "User's biological sex",
+              "enum": [
+                "male",
+                "female"
+              ]
+            },
+            "location": {
+              "type": "string",
+              "description": "An area, place, city or neighborhood. Format: latitude, longitude. If the user provides city and state, infer the closest latitude and longitude."
+            },
+            "condition": {
+              "type": "string",
+              "description": "Diseases or Health conditions. Format: comma-separated values"
+            },
+            "term": {
+              "type": "string",
+              "description": "Any other clinical terms"
+            },
+            "liked_trials": {
+              "type": "string",
+              "description": "Trials that the user wants to know more about. Format: nctids, comma-separated"
+            },
+            "bad_trials": {
+              "type": "string",
+              "description": "Trials that the user cannot join. Format: nctids, comma-separated"
+            }
+          },
+          "required": [
+            "age",
+            "sex",
+            "location",
+            "condition"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
         "name": "set_context",
-        "description": "Updates the context of this thread, reporting what the user is talking about, or what the user is asking for",
+        "description": "Updates the context of this thread, reporting what the user is talking about, or what the user is asking for. Call this whenever the current message's context differs from the previous",
         "parameters": {
           "type": "object",
           "properties": {
             "context": {
               "type": "string",
-              "description": "The current context of the chat. Infer this using up to 3 of the last messages sent by the user.",
+              "description": "The current context of the chat. Infer this from the last message sent by the user.",
               "enum": [
                 "Common chat, Regular conversation, No specific topic",
                 "Weather",
@@ -69,7 +138,7 @@
           "properties": {
             "location": {
               "type": "string",
-              "description": "The city and state, e.g. San Francisco, CA"
+              "description": "An area, place, city or neighborhood. Format: latitude, longitude. If the user provides city and state, infer the closest latitude and longitude."
             },
             "unit": {
               "type": "string",
