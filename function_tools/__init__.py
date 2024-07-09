@@ -5,32 +5,43 @@ from function_tools.tool_get_website import get_website
 from function_tools.tool_harry_potter import get_hp_information
 from function_tools.tool_weather import get_weather_information
 from function_tools.tool_characteristics_memory import set_characteristics
+from helpers.terminal_helpers import tprint
 
 def handle_tool_call(fn_name, fn_args):
+  tprint(f"handling tool call request for '{fn_name}'", verbose=True)
   results = ""
 
+  obj_args = fn_args
+  tprint("parsed arguments:", verbose=True)
+  tprint(obj_args, verbose=True)
+
   if fn_name == "get_instructions":
-    results = get_instructions();
+    results = get_instructions(obj_args);
 
   if fn_name == "set_context":
-    results = set_chat_context(fn_args)
+    results = set_chat_context(obj_args)
 
   if fn_name == "get_weather":
-    results = get_weather_information(fn_args)
+    results = get_weather_information()
 
   if fn_name == "potter_api":
-    results = get_hp_information(fn_args)
+    results = get_hp_information()
 
   if fn_name == "get_website":
-    results = get_website(fn_args)
+    results = get_website(obj_args)
 
   if fn_name == "get_trials":
-    results = list_trials(fn_args)
+    results = list_trials(obj_args)
 
   if fn_name == "show_trial":
-    results = show_full_trial(fn_args)
+    results = show_full_trial(obj_args)
 
   if fn_name == "set_characteristics_memory":
-    results = set_characteristics(fn_args)
+    results = set_characteristics(obj_args)
 
+  tprint(f"finished tool call with results: '{str(results)}'", verbose=True)
   return str(results)
+
+
+def handle_flow_instructions(thread_id):
+  return None
