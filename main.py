@@ -1,14 +1,14 @@
 
 from helpers.openai_helpers import chat_completion_request
 from helpers.terminal_helpers import fmt_msg, read_prompt_message, print_header, parse_args, tprint
-from helpers.fs_helper import import_json
-from function_tools import handle_tool_call
+from helpers.fs_helper import read_obj
+from function_tools import handle_tool_call, handle_flow_instructions
 
 
 def main():
   print_header()
   parse_args()
-  nb = import_json("./data_files/assistant_config.json")
+  nb = read_obj("./data_files/assistant_config.json")
   tprint("initial configuration loaded", verbose=True)
 
   messages = []
@@ -59,13 +59,24 @@ def main():
         
       # end for tool_call_cfg in tool_calls
 
+      tprint("consulting new flow instructions", verbose=True)
+      flow_message = handle_flow_instructions("id")
+
+      tprint(f"flow instructions are: '{flow_message}'", verbose=True)
+      if flow_message:
+        tprint("sending system message with flow instructions")
+        flow_message_obj = {"role": "system", "content": flow_message }
+        messages.append(flow_message_obj)
+        tprint(fmt_msg(flow_message_obj), debug=True, header=False)
+        tprint("responding to GPT with the tool call results and new flow instructions", verbose=True)
+      else:
+        tprint("responding to GPT with the tool call results", verbose=True)
+
       # get a new response from the model where it can see the function(s) response
-      
-      tprint("responding to GPT with the tool call results", verbose=True)
       response_with_tool_call = chat_completion_request(messages,
         model=nb['model'],
       )
-      tprint("received GPT response", verbose=True)
+      tprint("received GPT reply", verbose=True)
       tprint(response_with_tool_call, verbose=True)
 
       tprint("will proceed and output GPT reply message to user", verbose=True)

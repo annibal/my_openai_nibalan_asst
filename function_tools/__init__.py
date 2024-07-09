@@ -7,6 +7,7 @@ from function_tools.tool_weather import get_weather_information
 from function_tools.tool_characteristics_memory import set_characteristics
 from helpers.terminal_helpers import tprint
 
+# tool call needs thread_id
 def handle_tool_call(fn_name, fn_args):
   tprint(f"handling tool call request for '{fn_name}'", verbose=True)
   results = ""
@@ -37,11 +38,16 @@ def handle_tool_call(fn_name, fn_args):
     results = show_full_trial(obj_args)
 
   if fn_name == "set_characteristics_memory":
-    results = set_characteristics(obj_args)
+    results = set_characteristics(obj_args) # thread_id
 
   tprint(f"finished tool call with results: '{str(results)}'", verbose=True)
   return str(results)
 
 
 def handle_flow_instructions(thread_id):
+  file_name = f"./temp_chat_data/{thread_id}.json"
+  # read
+  # if empty: populate with default
+  # decide stage
+  # create instruction message
   return None
