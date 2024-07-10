@@ -1,4 +1,4 @@
 __pycache__
 .openai_api_key
 .current_chat_context
-temp_chat_data
+temp_chat_data/*
