@@ -49,7 +49,7 @@ async def handle_tool_call(fn_name, fn_args, thread_id="thrd_000_unknown"):
 
   # Deactivated
   if fn_name == "get_trials":
-    results = list_trials(obj_args)
+    results = list_trials(obj_args, thread_id)
 
   # Active
   if fn_name == "show_trial":
@@ -80,5 +80,9 @@ async def handle_flow_instructions(thread_id):
   
   if has_age and has_sex and has_latitude and has_longitude and has_conditions and has_terms:
     return "You must search for trials, but only after the next message."
+  
+
+  # if curr_count_trials > 20:
+  #   return "Inform the user that there's still too many trials, ask for more information"
 
   return None

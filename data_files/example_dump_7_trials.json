@@ -1,0 +1,357 @@
+{
+  "totalCount": 7,
+  "studies": [
+      {
+          "protocolSection": {
+              "identificationModule": {
+                  "nctId": "NCT05145127",
+                  "briefTitle": "Open-Label Extension Study of Marstacimab in Hemophilia Participants With or Without Inhibitors",
+                  "officialTitle": "AN OPEN-LABEL EXTENSION STUDY TO EVALUATE THE LONG-TERM SAFETY, TOLERABILITY, AND EFFICACY OF MARSTACIMAB PROPHYLAXIS IN SEVERE (COAGULATION FACTOR ACTIVITY <1%) HEMOPHILIA A PARTICIPANTS WITH OR WITHOUT INHIBITORS OR MODERATELY SEVERE TO SEVERE HEMOPHILIA B PARTICIPANTS (COAGULATION FACTOR ACTIVITY ≤2%) WITH OR WITHOUT INHIBITORS"
+              },
+              "statusModule": {
+                  "overallStatus": "RECRUITING",
+                  "startDateStruct": {
+                      "date": "2021-11-17"
+                  },
+                  "primaryCompletionDateStruct": {
+                      "date": "2030-07-31"
+                  },
+                  "completionDateStruct": {
+                      "date": "2030-07-31"
+                  },
+                  "studyFirstSubmitDate": "2021-11-11",
+                  "lastUpdateSubmitDate": "2024-07-01"
+              },
+              "descriptionModule": {
+                  "briefSummary": "Study B7841007 is an open-label extension study to assess the long-term safety, tolerability, and efficacy of prophylaxis treatment with marstacimab in participants who did not require \"Early Termination\" from the Phase 3 Study B7841005 and from the Phase 3 Study B7841008.\n\nStudy B7841005: approximately 145 adolescent and adult participants 12 to \\<75 years of age with severe hemophilia A or moderately severe to severe hemophilia B (defined as FVIII activity \\<1% or FIX activity ≤2%, respectively) with or without inhibitors are expected to be enrolled in Study B7841005 during which they will receive prophylaxis (defined as treatment by SC injection of marstacimab).\n\nStudy B7841008: this is an ongoing Phase 3, open-label study in pediatric participants \\<18 years of age with severe hemophilia A (FVIII Coagulation Factor Activity \\<1%) or moderately severe to severe hemophilia B (FIX Coagulation Factor Activity ≤2%). A sequential approach will be used in enrolling at least 100 pediatric participants, at least 20 of which will be aged ≥12 to \\<18 years and at least 80 participants will be aged ≥1 to \\<12 years. At the start of study B7841008, the dosing and data available in adolescent and adult participants in Study B7841005 supported the initiation of B7841008 study in participants aged ≥12 to \\<18 years. Subsequently, additional safety and efficacy data from adolescent participants in Study B7841005 became available for benefit/risk assessment in support of dosing participants aged ≥6 to \\<12 years. Based on the positive benefit/risk assessment conducted by both internal Pfizer review and eDMC review, dosing of the ≥6 to \\<12 years age group was initiated in June 2023 in B7841008 Study. Data from participants ≥6 years from B7841008 Study and Study B7841005 will support the dosing of participants aged ≥1 to \\<6 years.\n\nAll participants will be provided the prefilled pen (PFP) for administration of marstacimab in the study. Use of the prefilled syringe (PFS) will be permitted at the investigator's discretion for those participants who have difficulty with administration of the PFP. Additionally, participants will be provided the PFS for use in this study in countries where the PFS is anticipated to be the only presentation available commercially. An optional, open-label, single arm, substudy using the PFP was completed in the first 23 participants rolled over from Study B7841005 who agreed to participate in the substudy."
+              },
+              "conditionsModule": {
+                  "conditions": [
+                      "Hemophilia A",
+                      "Hemophilia B"
+                  ],
+                  "keywords": [
+                      "Factor VIII Inhibitor",
+                      "Factor IX Inhibitor",
+                      "PF-06741086",
+                      "Marstacimab",
+                      "Anti-TFPI"
+                  ]
+              },
+              "designModule": {
+                  "enrollmentInfo": {
+                      "count": 145,
+                      "type": "ESTIMATED"
+                  }
+              },
+              "eligibilityModule": {
+                  "eligibilityCriteria": "Inclusion Criteria:\n\n* All participants will have a minimum body weight as defined by parent studies\n* Participants who are willing and able to comply with all scheduled visits, treatment plan, laboratory tests, and other study procedures.\n* Participants have successfully completed participation in parent studies, defined as did not require \"Early Termination\"\n\nExclusion Criteria:\n\n* Previous or current treatment for or history of coronary artery disease, venous or arterial thrombosis (CTCAE Grade \\>3), or ischemic disease (except catheter-associated thrombosis)\n* Abnormal renal function as defined by eGFR \\<30 mL.min/1.73 m(2)\n* Known planned surgical procedure during the planned study period\n* Unstable hepatic function as determined by the Investigator clinical assessment and review of the participant's most recent laboratory results, which would make the participant inappropriate for the study\n* For participants known to be HIV+, worsening disease status as determined by the Investigator clinical assessment and review of participant's most recent laboratory results, to include recent locally available CD4 count (if available), which would make the participant inappropriate for the study\n* Regular, concomitant therapy with immunomodulatory drugs (eg, IVIG, and routine systemic corticosteroids, rituximab)\n* Ongoing or planned use of immune tolerance induction or prophylaxis with FVIII or FIX replacement during the study\n* Participation in other study involving investigational drug(s) or investigational vaccine(s) within 30 days or 5 half-lives prior to or during study participation, with the exception of participation in parent studies\n* Investigator site staff or Pfizer employees directly involved in the conduct of the study, site staff otherwise supervised by the Investigator, and their respective family members",
+                  "healthyVolunteers": false,
+                  "sex": "MALE",
+                  "minimumAge": "1 Year",
+                  "maximumAge": "74 Years"
+              }
+          }
+      },
+      {
+          "protocolSection": {
+              "identificationModule": {
+                  "nctId": "NCT05403476",
+                  "briefTitle": "A Trial to Compare Efficacy and Safety of Follitropin Delta Versus Placebo (Inactive Treatment) in the Treatment of Men With Idiopathic Infertility (Unexplained Reduction of Semen Quality) (ADAM)",
+                  "officialTitle": "A Randomised, Double-blind, Placebo-controlled Trial to Assess the Efficacy and Safety of FE 999049 for Treatment of Men With Idiopathic Infertility"
+              },
+              "statusModule": {
+                  "overallStatus": "RECRUITING",
+                  "startDateStruct": {
+                      "date": "2022-08-16"
+                  },
+                  "primaryCompletionDateStruct": {
+                      "date": "2026-07-15"
+                  },
+                  "completionDateStruct": {
+                      "date": "2026-07-15"
+                  },
+                  "studyFirstSubmitDate": "2022-05-30",
+                  "lastUpdateSubmitDate": "2024-05-29"
+              },
+              "descriptionModule": {
+                  "briefSummary": "The primary purpose of this trial is to investigate whether men with idiopathic infertility (unexplained reduction of semen quality), after being treated with a daily dose of 12 µg recombinant follicle stimulating hormone (rFSH) for 6 months, can improve the chance of spontaneous pregnancy observed in their female partners in comparison to placebo (inactive treatment). For more information, please visit the trial's website www.adamclinicaltrial.com (only applicable in the US)."
+              },
+              "conditionsModule": {
+                  "conditions": [
+                      "Male Idiopathic Infertility"
+                  ]
+              },
+              "designModule": {
+                  "enrollmentInfo": {
+                      "count": 400,
+                      "type": "ESTIMATED"
+                  }
+              },
+              "eligibilityModule": {
+                  "eligibilityCriteria": "Inclusion Criteria:\n\n* History of infertility for 12-60 months with current partner at randomization.\n* Men between the ages of 18 and 50 years.\n* Total sperm count 5-39 million at screening; confirmed by two consecutive samples taken ≥2 weeks apart before randomization.\n* Total motile sperm count of 5-16 million at screening; confirmed by two consecutive samples taken ≥2 weeks apart before randomization.\n* Semen volume ≥1.4 mL at screening; confirmed by two consecutive samples taken ≥2 weeks apart before randomization.\n* Serum follicle-stimulating hormone (FSH) levels of 1.5-8.0 IU/L (measured at central laboratory) at screening. (Approved in US: FSH levels of 2-12.0 IU/L (measured at central laboratory) at screening)\n* Serum luteinising hormone (LH) levels of 1.2-7.5 IU/L (measured at central laboratory) at screening.\n* Serum total testosterone levels of ≥300 ng/dL (equals ≥10.4 nmol/L; measured at central laboratory) at screening.\n* Agree to have regular intercourse with current female partner with the intent of spontaneous conception within 9 months from randomization.\n* Agree to provide information on female partner's positive urine pregnancy test(s) and documentation of ultrasound(s), delivery, and neonatal/infant health.\n\nCurrent partner fulfilling the criteria below:\n\n* Pre-menopausal woman between the ages of 18 and 35 years. (Approved in US: Pre-menopausal woman between the ages of 18 and 38 years.)\n* Regular menstrual cycles of 21-35 days.\n* No history or current condition of pelvic inflammatory disease, endometriosis stage II-IV by definite or empirical diagnosis, or tubal ligation.\n* Agree not to obtain infertility treatment outside of this trial for 9 months from randomization of male subject. (Approved in US: However, after 6 months from randomisation, the subject's semen can be used in infertility treatment procedures of his partner.)\n\nExclusion Criteria:\n\n* Previous FSH treatment not leading to conception. (Approved in US: Previous FSH treatment for ≥4 months not leading to conception.)\n* Past or current use of finasteride within 3 months prior to screening.\n* Any history of anatomical disorder of the pituitary gland or testes.\n* Any structural abnormalities of the vas deferens (unilateral or bilateral) at screening.\n* Any known, clinically significant, systemic disease in addition to the trial indication that might negatively impact fertility.\n* Known history or presence of clinical varicocele (subclinical and Grade 1 varicocele are acceptable).\n* Known history of cryptorchidism, testicular torsion, or orchitis.\n* Known abnormal karyotype (including Y-chromosome microdeletion).\n* Current or past treatment of urogenital (kidney, bladder, testicular, or prostate) cancer as well as history of chemo- or radiotherapy that can have impact on testes.\n* Any known uncontrolled non-gonadal endocrinopathies (thyroid, adrenal, pituitary disorders).\n* Administration of hormonal preparations, agents known to impair testicular function or affect sex hormone secretion, and known or suspected teratogens within 3 months prior to screening. Administration of anabolic steroids within 12 months prior to screening.",
+                  "healthyVolunteers": false,
+                  "sex": "MALE",
+                  "minimumAge": "18 Years",
+                  "maximumAge": "50 Years"
+              }
+          }
+      },
+      {
+          "protocolSection": {
+              "identificationModule": {
+                  "nctId": "NCT04049331",
+                  "briefTitle": "Testosterone Replacement in Male Cancer Survivors With Fatigue and Low Testosterone",
+                  "officialTitle": "Improving Patient-Important Outcomes With Testosterone Replacement in Hypogonadal Men With a Prior History of Cancer"
+              },
+              "statusModule": {
+                  "overallStatus": "RECRUITING",
+                  "startDateStruct": {
+                      "date": "2021-03-22"
+                  },
+                  "primaryCompletionDateStruct": {
+                      "date": "2026-01-30"
+                  },
+                  "completionDateStruct": {
+                      "date": "2026-01-30"
+                  },
+                  "studyFirstSubmitDate": "2019-07-23",
+                  "lastUpdateSubmitDate": "2024-04-29"
+              },
+              "descriptionModule": {
+                  "briefSummary": "The overall goal of this study is to evaluate the effect of a testosterone drug called Depo-Testosterone (or 'testosterone cypionate'), an FDA-approved drug for improving fatigue, sexual function, quality of life, body composition, muscle strength, and physical activity in young cancer survivors who report fatigue and have low testosterone. Main hypothesis is that Testosterone administration in young male cancer survivors who are in remission for at least 1 year, report cancer-related fatigue and have symptomatic testosterone deficiency will be associated with greater improvements in fatigue scores compared with placebo.",
+                  "detailedDescription": "The overall goal of this proposal is to evaluate the efficacy of testosterone replacement therapy in improving fatigue and other outcomes such as sexual function, quality of life, body composition, muscle strength and physical activity in a double-blind, randomized, placebo-controlled trial in young cancer survivors who report fatigue and have testosterone deficiency.\n\nFatigue is one of the most prevalent and debilitating symptoms in men with cancer affecting 70-100% of patients irrespective of their age. Cancer-related fatigue is experienced by patients not only during active cancer treatment, but is also highly prevalent in cancer survivors who exhibit persistent fatigue months to years after the end of their treatment with the highest prevalence being in recipients of chemotherapy and/or radiation therapy.\n\nIn addition to fatigue, sexual dysfunction is also highly prevalent in male cancer survivors. Male cancer survivors also have increased fat mass and decreased lean body mass, a phenotype that predisposes them to reduced muscle strength. This phenotype of fatigue, sexual dysfunction and adverse body composition is commonly encountered in non-cancer patient populations with testosterone deficiency, a condition which is also highly prevalent (50-90%) in cancer survivors. Pivotal trials of testosterone replacement therapy in non-cancer patient populations have shown an improvement in fatigue, sexual function and body composition in men randomized to testosterone compared with placebo. However, the efficacy of testosterone replacement therapy on cancer-related fatigue has not been studied."
+              },
+              "conditionsModule": {
+                  "conditions": [
+                      "Hypogonadism, Male",
+                      "Fatigue Syndrome, Chronic"
+                  ],
+                  "keywords": [
+                      "testosterone",
+                      "hypogonadism",
+                      "cancer related fatigue"
+                  ]
+              },
+              "designModule": {
+                  "enrollmentInfo": {
+                      "count": 240,
+                      "type": "ESTIMATED"
+                  }
+              },
+              "eligibilityModule": {
+                  "eligibilityCriteria": "Inclusion Criteria:\n\n* Cancer survivors who have received chemotherapy and/or radiation therapy for their cancer and are now in remission for at least one year\n* Non-hormone-dependent cancer, including most solid tumors, lymphomas and leukemias\n* Age: 18-54 years\n* Serum testosterone, measured by mass spectrometry (gold standard method), of \\<348 ng/dl and/or free testosterone \\<70 pg/ml. The lower limits of the normal range for total testosterone in healthy young men (age 19-40 years), is 348 ng/dL and the lower limits of free testosterone is \\<70 pg/ml in the Framingham Heart Study sample97. Therefore, young symptomatic men with total testosterone \\<348 ng/dl could be considered testosterone deficient. As sex hormone binding globulin levels may be elevated in some men with cancer (resulting in elevation in total testosterone level), some of these symptomatic men may still be hypogonadal despite having total testosterone above this cut-off limit. However; their free testosterone levels may still be below the lower limit of normal. Thus, we will also include men with free testosterone \\<70 pg/mL.\n* Self-reported fatigue. We have selected these symptoms because they are commonly reported in male cancer survivors. Fatigue will be defined as a score on Functional Assessment of Chronic Illness Therapy-Fatigue (FACIT-F) subscale of \\<40, which best divides cancer patients from the general population with 84% accuracy, and was used as the cut-off for the NIA-funded 50-million-dollar testosterone trial (The T-Trial).\n* Ability and willingness to provide informed consent.\n\nExclusion Criteria:\n\n* Men with hormone-dependent cancers (breast, prostate or adenocarcinoma of unknown origin)\n* Men with brain cancer (potential cognitive impairment)\n* Use of anabolic agents (testosterone, dehydroepiandrosterone, growth hormone) within the past 6 months\n* Appetite stimulating agents e.g. megestrol acetate within the past 6 months\n* Systemic glucocorticoids e.g. prednisone 20 mg daily or equivalent doses of other glucocorticoids for more than two weeks in the past 6 months\n* Baseline hematocrit \\>48%\n* PSA \\>4 ng/ml in Caucasians; \\>3 ng/ml in African-Americans\n* Men with 1st order relatives with a history of prostate cancer\n* Uncontrolled congestive heart failure\n* Severe untreated sleep apnea\n* Myocardial infarction, acute coronary syndrome, revascularization surgery, or stroke within 3 months\n\n  o Previous stroke with residual cognitive or functional deficits; Mini-Mental State Examination score \\<24\n* Serum creatinine \\>2.5 mg/dL; ALT 3x upper limit of normal\n* Poorly controlled diabetes as defined by hemoglobin A1c \\>8.5%; Body mass index (BMI) \\>45 kg/m2\n* Untreated unipolar depression (treated depression with medications or counseling will be allowed\n* Bipolar disorder or schizophrenia",
+                  "healthyVolunteers": false,
+                  "sex": "MALE",
+                  "minimumAge": "18 Years",
+                  "maximumAge": "54 Years"
+              }
+          }
+      },
+      {
+          "protocolSection": {
+              "identificationModule": {
+                  "nctId": "NCT02927210",
+                  "briefTitle": "Injectable DMAU for Male Contraception in Healthy Male Volunteers (CCN015)",
+                  "officialTitle": "Injectable DMAU for Male Contraception: Safety and Tolerability, Pharmacokinetics and Pharmacodynamics of Single IM or SC DMAU Injection Dose Escalation Study in Healthy Male Volunteers"
+              },
+              "statusModule": {
+                  "overallStatus": "RECRUITING",
+                  "startDateStruct": {
+                      "date": "2016-12"
+                  },
+                  "primaryCompletionDateStruct": {
+                      "date": "2024-12"
+                  },
+                  "completionDateStruct": {
+                      "date": "2024-12"
+                  },
+                  "studyFirstSubmitDate": "2016-09-28",
+                  "lastUpdateSubmitDate": "2021-07-07"
+              },
+              "descriptionModule": {
+                  "briefSummary": "This is a Phase I multicenter, double-blind, single dose, dose-ranging study, in healthy men to evaluate the safety and tolerability, pharmacokinetics and pharmacodynamics of Dimethandrolone Undecanoate (DMAU) administered as an intramuscular or subcutaneous injection.",
+                  "detailedDescription": "This single dose, dose-ranging study will be conducted in two centers: the Los Angeles Biomedical Research Institute at Harbor-UCLA Medical Center and the University of Washington.\n\nSingle doses of DMAU in castor oil/benzyl benzoate injections intramuscularly (IM) (80 mg, 240 mg, 480 mg, and 800 mg) or administered subcutaneously (SC) (50 mg, 100 mg and 200 mg) were selected for this dose-escalating study. Twelve subjects will complete this study at each of the DMAU doses (10 on DMAU and 2 on placebo injections) yielding a total of 84 completed subjects (70 on DMAU and 14 on placebo) across both sites. Safety will be assessed in all subjects and recovery will be assessed in two subjects receiving lower doses, either IM or SC, before additional men receive higher doses of IM or SC of DMAU. In addition to safety and tolerability, suppression of serum T, E2, gonadotropins, and SHBG will be assessed as secondary pharmacodynamic (PD) endpoints. PK of DMAU and DMA will be assessed through blood draws done at each visit. Suppression of spermatogenesis will be assessed with semen analysis.\n\nDMAU injections will be administered at the study site by research nurses or physicians. For intramuscular injections, the staff will inject DMAU in castor oil into the gluteal region following standard procedures for intramuscular steroid injection. Abdominal subcutaneous injections will follow standard subcutaneous procedures. The subject will be observed for at least 30 minutes before release from the study site."
+              },
+              "conditionsModule": {
+                  "conditions": [
+                      "Healthy Men",
+                      "Male Contraception"
+                  ],
+                  "keywords": [
+                      "Healthy Men",
+                      "Male Contraception",
+                      "Androgen",
+                      "Dimethandrolone"
+                  ]
+              },
+              "designModule": {
+                  "enrollmentInfo": {
+                      "count": 84,
+                      "type": "ESTIMATED"
+                  }
+              },
+              "eligibilityModule": {
+                  "eligibilityCriteria": "Inclusion Criteria:\n\nMen who meet all the following criteria are eligible for enrollment in the trial:\n\n1. Male volunteers in good health as confirmed by physical examination, medical history, and clinical laboratory tests of blood and urine at the time of screening.\n2. 18 to 50 years of age (inclusive) at the time of the enrollment visit.\n3. BMI ≤ 33 calculated as weight in kg/ (height in m2).\n4. Weight ≥60 kg.\n5. No history of hormonal therapy use in the three months prior to the first screening visit.\n6. Agree to use a recognized effective method of contraception with any female partner (i.e. at a minimum, barrier plus an additional method of contraception) during the course of the study treatment and recovery phases until recovery is confirmed and study exit occurs.\n7. Subjects will refrain from donating blood or plasma during the study period.\n8. Subjects will be advised to refrain from excessive alcoholic consumption during the study period. (No more than 15 drinks per week and no alcohol consumption within 24 hours of a study visit.)\n9. No known or suspected current alcohol dependence syndrome, chronic marijuana use, or any illicit drug use that may affect metabolism/transformation of steroid hormones and study treatment compliance.\n10. In the opinion of the investigator, subject is able to comply with the protocol, understand and sign an informed consent and HIPAA form.\n\n12. Subjects will be advised to refrain from major changes in their level of exercise during the study period.\n\nExclusion Criteria:\n\nMen who meet any of the following criteria are NOT eligible for enrollment in the trial:\n\n1. Men participating in another clinical trial involving an investigational drug within the 30 days prior to the first screening visit.\n2. Men not living in the catchment area of the clinic or within a reasonable distance from the study site.\n3. Clinically significant abnormal physical and laboratory findings at screening.\n4. Elevated PSA (levels ≥ 2.5 ng/mL) at screening, according to local laboratory normal values.\n5. Abnormal serum chemistry values at screening, according to local laboratory reference ranges that indicate liver or kidney dysfunction or that may be considered clinically significant. In addition, the following upper limits will be observed: fasting bilirubin less than 2 mg/dL, cholesterol less than 221 mg/dL, and fasting triglycerides less than 201 mg/dL.\n6. Abnormal semen analyses or abnormal semen concentration as defined by the WHO semen manual.\n7. Use of androgens within 3 months before first screening visit except for long acting testosterone injections (e.g. Testosterone undecanoate) which will require a wash out period of 6 months prior to screening.\n8. Ongoing use of body building substances including nutritional supplements.\n9. Systolic BP \\> 130 mm Hg and Diastolic blood pressure BP \\> 80 and mm Hg; Blood pressure (BP) will be taken 3 times at 5 - minute intervals and the mean of all measurements be used to determine eligibility).\n10. Clinically significant abnormal EKG or a QTc interval of \\> 450 msec.\n11. PHQ-9 score of 15 or above.\n12. History of hypertension, including hypertension controlled with treatment.\n13. Known history of primary testicular disease or disorders of the hypothalamic-pituitary axis.\n14. Benign or malignant liver tumors; active liver disease.\n15. History of breast carcinoma.\n16. Known history of androgen deficiency due to hypothalamic-pituitary or testicular disease.\n17. Known history of cardiovascular, renal, hepatic or prostatic disease or significant psychiatric illness.\n18. Positive serology for active Hepatitis (not immunization-related serology) or HIV at screening visit.\n19. A serious systemic disease such as diabetes mellitus or obesity (body weight greater than BMI \\>33 kg/m2 as above).\n20. History of known, untreated sleep apnea.\n\n22. Partner is known to be pregnant. 23. Men desiring fertility within the first seven months of study participation.\n\n24. Men participating in competitive sports where drug screening for prohibited substances (including anabolic steroids) is routine. Exclusion is due to the potential of testing positive for androgens that may occur from their study participation coupled with the unknown efficacy (i.e. duration of positive testing) from a single injection.\n\n26. Use of sex steroids or medications which might interfere with steroid metabolism (i.e. ketoconazole, finasteride, oral corticosteroids, dutasteride and statins).\n\n27. Use of medications that will interfere or interact with DMAU.",
+                  "healthyVolunteers": true,
+                  "sex": "MALE",
+                  "minimumAge": "18 Years",
+                  "maximumAge": "50 Years"
+              }
+          }
+      },
+      {
+          "protocolSection": {
+              "identificationModule": {
+                  "nctId": "NCT06464770",
+                  "briefTitle": "Optimizing Infection Prophylaxis Prior to Shoulder Surgery",
+                  "officialTitle": "Optimizing Infection Prophylaxis Prior to Shoulder Surgery"
+              },
+              "statusModule": {
+                  "overallStatus": "NOT_YET_RECRUITING",
+                  "startDateStruct": {
+                      "date": "2024-07-01"
+                  },
+                  "primaryCompletionDateStruct": {
+                      "date": "2026-12-31"
+                  },
+                  "completionDateStruct": {
+                      "date": "2027-12-31"
+                  },
+                  "studyFirstSubmitDate": "2024-06-12",
+                  "lastUpdateSubmitDate": "2024-06-28"
+              },
+              "descriptionModule": {
+                  "briefSummary": "The goal of this interventional study is to determine the amount of skin C. acnes reduction with increased pressure during the chlorhexidine gluconate, brand name ChloraPrep, application. The main question it aims to answer is:\n\nDoes changing the pressure applied during the ChloraPrep application impact the amount of C. acnes bacteria on the skin after one hour? Researchers will compare ChloraPrep applied at a pressure similar to a gentle wipe to ChloraPrep applied at a pressure similar to a massage to see if wash the amount of C. acnes on the skin after one hour is different.\n\nParticipants will have one shoulder washed with ChloraPrep using pressure meant to impact the dermal layer, similar to a gentle wipe, and the other shoulder washed with ChloraPrep using pressure meant to impact the subdermal layer, similar to a massage. Participants will have swabs taken of their skin before the ChloraPrep application and again one hour after application to look for the amount of C. acnes on the skin."
+              },
+              "conditionsModule": {
+                  "conditions": [
+                      "Arthroplasty Shoulder",
+                      "Periprosthetic Joint Infection"
+                  ],
+                  "keywords": [
+                      "periprosthetic joint infection",
+                      "cutibacterium",
+                      "shoulder arthroplasty",
+                      "chlorhexidine"
+                  ]
+              },
+              "designModule": {
+                  "enrollmentInfo": {
+                      "count": 40,
+                      "type": "ESTIMATED"
+                  }
+              },
+              "eligibilityModule": {
+                  "eligibilityCriteria": "Inclusion Criteria:\n\n* English speaking\n\nExclusion Criteria:\n\n* Self report very sensitive skin\n* Allergic to chlorhexidine\n* Used antibiotics in the last three months\n* Used acne treatment in the last three months\n* Wounds on your shoulders",
+                  "healthyVolunteers": true,
+                  "sex": "MALE",
+                  "minimumAge": "18 Years",
+                  "maximumAge": "89 Years"
+              }
+          }
+      },
+      {
+          "protocolSection": {
+              "identificationModule": {
+                  "nctId": "NCT04363164",
+                  "briefTitle": "Sequential Testosterone and Enzalutamide Prevents Unfavorable Progression",
+                  "officialTitle": "A Randomized Phase II Study Comparing Sequential High Dose Testosterone and Enzalutamide to Enzalutamide Alone in Asymptomatic Men With Castration Resistant Metastatic Prostate Cancer"
+              },
+              "statusModule": {
+                  "overallStatus": "RECRUITING",
+                  "startDateStruct": {
+                      "date": "2020-08-19"
+                  },
+                  "primaryCompletionDateStruct": {
+                      "date": "2025-07"
+                  },
+                  "completionDateStruct": {
+                      "date": "2026-07"
+                  },
+                  "studyFirstSubmitDate": "2020-04-23",
+                  "lastUpdateSubmitDate": "2024-06-10"
+              },
+              "descriptionModule": {
+                  "briefSummary": "Asymptomatic men without pain due to prostate cancer progressing with metastatic CRPC after treatment with combination or sequential ADT + Abi will be treated on a randomized, open label study to determine if sequential treatment with high dose T and Enza will improve primary and secondary objectives vs. continuous Enza as standard therapy.",
+                  "detailedDescription": "Eligible patients are those who have progressive disease after treatment with Abi either in combination with ADT as initial therapy or as second-line therapy after development of resistance to primary ADT. Patients will continue on ADT with LHRH agonist (i.e. Zoladex, Trelstar, Eligard or Lupron) or LHRH antagonist (Degarelix) if not surgically castrated throughout the duration of the study to inhibit endogenous testosterone production. Patients will be randomized 1:2:2 and stratified based on whether they received Abi in combination with ADT or in sequence after progression on ADT and based on duration of response to Abi (\\<6 or ≥ 6 months).\n\nPatients randomized to Arm A will receive continuous therapy with standard dose Enza (160 mg po q day).\n\nPatients randomized to Arm B will receive Sequential Testosterone and Enzalutamide (STE). Patients in Arm B will receive intramuscular injection with testosterone cypionate (T) at a dose of 400 mg every 28 days x 2 (i.e. cycle 1). This dose was selected based on data demonstrating that it produces an initial high dose serum level of T (i.e. \\> 1500 ng/dL or 3-10 times normal level) with eugonadal levels achieved at the end of two weeks and near castrate levels after 28 days. On Day 1 of cycle 2, patients will stop testosterone and begin enzalutamide 160 mg po q day for 56 days. Each cycle is 56 days. On Day 1 of cycle 3, patient will not take enzalutamide and will again receive injection of testosterone. Patients will continue to alternate one cycle of testosterone (2 injections) with one cycle of 56 days of enzalutamide.\n\nPatients randomized to Arm C will receive Variable Sequential Testosterone and Enzalutamide (VSTE). Patients in Arm C will receive intramuscular injection with testosterone cypionate (T) at an FDA-approved dose of 400 mg every 28 days x 2 injections per cycle. Patients will remain on high dose T for at least one cycle. Each cycle is 56 days. Patients with PSA progression (≥25% increase in PSA from baseline PSA on BAT cycle) will stop T injection and begin Enzalutamide. Patients on T with initial with declining PSA decline PSA will remain on high dose T for additional cycles of 2 injections until PSA progression occurs (≥25% increase in PSA from PSA nadir on current BAT cycle)based on PCWG3 criteria. Patients with PSA progression (≥25% increase in PSA from baseline) will stop T injection. These patients will then be started on Enzalutamide. Patients with PSA progression (≥25% increase in PSA from baseline on enzalutamide cycle) will stop Enzalutamide and will restart injections of T with 2 injections/cycle. Patients on enzalutamide with initial PSA decline after one 56- day cycle will continue on Enzalutamide until PSA progression occurs (≥25% increase in PSA from PSA nadir on current Enzalutamide cycle). . Patients with PSA progression (≥25% increase in PSA from baseline) will stop Enzalutamide and will restart injections of T with 2 injections/cycle. These cycles of switching between T and Enza with onset of PSA progression will continue until clinical and/or radiographic progression occurs.\n\nPatients will have prostate-specific antigen (PSA) level and symptoms assessment checked every cycle. Every 2 cycles (\\~4 months) patients will have repeat bone/CT scans to evaluate treatment response status. On CT scan, radiographic progression will be defined by RECIST criteria (i.e. \\>20% increase in the sum of target lesions). On bone scan, radiographic progression will be defined by PCWG3 criteria as ≥ 2 new bone lesions.\n\nPatients with PSA progression but with disease response or stable disease on imaging studies will remain on study until clinical or radiographic progression criteria are met. Patients with radiographic disease progression will stop treatment and come off study. Patients with clinical progression due to pain flare after first two injection of testosterone can remain on study. If pain persists after first cycle of enzalutamide, patients will stop treatment and come off study. If pain resolves on enzalutamide, but returns with next or subsequent cycles of testosterone, patients will stop treatment and come off study."
+              },
+              "conditionsModule": {
+                  "conditions": [
+                      "Castration Resistant Metastatic Prostate Cancer"
+                  ],
+                  "keywords": [
+                      "Testosterone",
+                      "Enzalutamide",
+                      "Androgen Deprivation Therapy (ADT)"
+                  ]
+              },
+              "designModule": {
+                  "enrollmentInfo": {
+                      "count": 150,
+                      "type": "ESTIMATED"
+                  }
+              },
+              "eligibilityModule": {
+                  "eligibilityCriteria": "Inclusion Criteria:\n\n1. ECOG Performance status ≤2.\n2. Age ≥18 years.\n3. Histologically-confirmed adenocarcinoma of the prostate.\n4. Treated with continuous androgen ablative therapy (either surgical castration or LHRH agonist/antagonist).\n5. Documented castrate level of serum testosterone (\\<50 ng/dl).\n6. Metastatic disease radiographically documented by CT or bone scan.\n7. Must have had disease progression while on combination of abiraterone acetate plus ADT either given concurrently or sequentially based on:\n\n   * PSA progression defined as an increase in PSA, as determined by 2 separate measurements taken at least 1 week apart And/ Or\n   * Radiographic disease progression, based on RECIST 1.1 in patients with measurable soft tissue lesions or PCWG3 for patients with bone disease\n8. Screening PSA must be ≥ 1.0 ng/mL.\n9. Patients with soft tissue lesion amenable to biopsy must agree to biopsy collection pre-treatment and at a defined point on treatment to perform tumor tissue analysis.\n10. No prior treatment with enzalutamide, apalutamide, darolutamide, or other investigational AR targeted treatment is allowed.\n11. Prior treatment with testosterone is allowed.\n12. Prior treatment with one chemotherapy regimen with docetaxel (≤ 6 doses) for hormonesensitive prostate cancer is allowed.\n13. Prior treatment with Provenge vaccine and 223Radium (Xofigo) is allowed if \\>4 weeks from last dose.\n14. Patients must be withdrawn from abiraterone for ≥ 2 weeks.\n15. Attempts must be made to wean patients off prednisone prior to starting therapy. Patients who cannot be weaned due to symptoms may continue on lowest dose of prednisone achieved during weaning period.\n16. Acceptable liver function:\n\n    1. Bilirubin \\< 2.5 times institutional upper limit of normal (ULN)\n    2. AST (SGOT) and ALT (SGPT) \\< 2.5 times ULN\n17. Acceptable renal function:\n\n    a. Serum creatinine \\< 2.5 times ULN\n18. Acceptable hematologic status:\n\n    1. Absolute neutrophil count (ANC) ≥ 1500 cells/mm3 (1.5 ×109/L)\n    2. Platelet count ≥ 100,000 platelet/mm3 (100 ×109/L)\n    3. Hemoglobin ≥ 8 g/dL.\n19. At least 4 weeks since prior radiation or chemotherapy.\n20. Ability to understand and willingness to sign a written informed consent document.\n\nExclusion Criteria:\n\n1. Pain due to metastatic prostate cancer requiring treatment intervention with pain medication.\n2. ECOG Performance status ≥3\n3. Prior treatment with enzalutamide is prohibited.\n4. Prior chemotherapy with docetaxel or cabazitaxel for castration resistant prostate cancer is prohibited.\n5. Requires urinary self-catheterization for voiding due to obstruction secondary to prostatic enlargement well documented to be due to prostate cancer or benign prostatic hyperplasia (BPH). Patients with indwelling Foley or suprapubic catheter for obstructive symptoms are eligible.\n6. Evidence of disease in sites or extent that, in the opinion of the investigator, would put the patient at risk from therapy with testosterone (e.g. femoral metastases with concern over fracture risk, severe and extensive spinal metastases with concern over spinal cord compression, extensive liver metastases).\n7. Evidence of serious and/or unstable pre-existing medical, psychiatric or other condition (including laboratory abnormalities) that could interfere with patient safety or provision of informed consent to participate in this study.\n8. Active uncontrolled infection, including known history of HIV/AIDS or hepatitis B or C.\n9. Any condition or mental impairment that may compromise the ability to give informed consent, patient's safety or compliance with study requirements as determined by the investigator.\n10. Patients receiving anticoagulation therapy with warfarin, rivaroxaban, or apixaban are not eligible for study. \\[Patients on enoxaparin eligible for study. Patients on warfarin, rivaroxaban,or apixaban, who can be transitioned to enoxaparin prior to starting study treatments will be eligible\\].\n11. Patients are excluded with prior history of a thromboembolic event within the last 12 months that are not being treated with systemic anticoagulation.\n12. Hematocrit \\>51%, untreated severe obstructive sleep apnea, uncontrolled or poorly controlled heart failure \\[per Endocrine Society Clinical Practice Guidelines (34)\\]\n13. Patients allergic to sesame seed oil or cottonseed oil are excluded.\n14. Major surgery (eg, requiring general anesthesia) within 3 weeks before screening, or has not fully recovered from prior surgery (ie, unhealed wound). Note: subjects with planned surgical procedures to be conducted under local anesthesia may participate.",
+                  "healthyVolunteers": false,
+                  "sex": "MALE",
+                  "minimumAge": "18 Years",
+                  "maximumAge": "90 Years"
+              }
+          }
+      },
+      {
+          "protocolSection": {
+              "identificationModule": {
+                  "nctId": "NCT05348577",
+                  "briefTitle": "Study of Capivasertib + Docetaxel vs Placebo + Docetaxel as Treatment for Metastatic Castration Resistant Prostate Cancer (mCRPC)",
+                  "officialTitle": "A Phase III Double-Blind, Randomised, Placebo-Controlled Study Assessing the Efficacy and Safety of Capivasertib + Docetaxel Versus Placebo + Docetaxel as Treatment for Patients With Metastatic Castration Resistant Prostate Cancer (mCRPC)"
+              },
+              "statusModule": {
+                  "overallStatus": "RECRUITING",
+                  "startDateStruct": {
+                      "date": "2022-03-25"
+                  },
+                  "primaryCompletionDateStruct": {
+                      "date": "2026-12-21"
+                  },
+                  "completionDateStruct": {
+                      "date": "2026-12-21"
+                  },
+                  "studyFirstSubmitDate": "2022-03-18",
+                  "lastUpdateSubmitDate": "2024-07-09"
+              },
+              "descriptionModule": {
+                  "briefSummary": "This study will assess the efficacy and safety of capivasertib plus docetaxel versus placebo plus docetaxel in participants with metastatic castration resistant prostate cancer (mCRPC), all participants will receive the docetaxel with steroid therapy and receive androgen deprivation therapy. The intention of the study is to demonstrate that the combination of capivasertib plus docetaxel is superior to placebo plus docetaxel with respect to the overall survival of study participants, when overall survival is defined as the time from randomization until the date of death due to any cause."
+              },
+              "conditionsModule": {
+                  "conditions": [
+                      "Prostate Cancer"
+                  ],
+                  "keywords": [
+                      "prostate cancer,",
+                      "metastatic",
+                      "castration resistant",
+                      "capivasertib,",
+                      "AKT inhibitor,",
+                      "docetaxel"
+                  ]
+              },
+              "designModule": {
+                  "enrollmentInfo": {
+                      "count": 1000,
+                      "type": "ESTIMATED"
+                  }
+              },
+              "eligibilityModule": {
+                  "eligibilityCriteria": "Inclusion Criteria:\n\n* Histologically-confirmed prostate adenocarcinoma without predominant neuroendocrine or small cell cancers\n* Metastatic disease documented prior to randomisation by clear evidence of ≥ 1 bone lesion (defined as 1 lesion with positive uptake on bone scan) and/or ≥ 1 soft tissue lesion (measurable or non-measurable)\n* Patient must have been previously treated with a next generation hormonal agent (NHA), ie, abiraterone, enzalutamide, apalutamide or darolutamide, for prostate cancer for at least 3 months and shown evidence of disease progression (radiological or via PSA assessment) while receiving the NHA\n* Evidence of mCRPC with progression of disease despite androgen deprivation therapy (ADT)\n* Serum testosterone level ≤ 50 ng/dL\n* Candidate for docetaxel and steroid therapy\n* Ongoing ADT with LHRH agonist, LHRH antagonist, or bilateral orchiectomy\n* Eastern Cooperative Oncology Group (ECOG)/World Health Organisation (WHO) performance status 0 to 1 and anticipated minimum life expectancy of 12 weeks\n* Confirmation that archival formalin-fixed paraffin-embedded (FFPE) tumour tissue sample which meets the minimum pathology and sample requirements is available to send to the central laboratory\n* Able and willing to swallow and retain oral medication\n* Agreement to remain abstinent (refrain from heterosexual intercourse) or use contraceptive measures, and agreement to refrain from donating sperm\n\nExclusion Criteria:\n\n* Radiotherapy with a wide field of radiation within 4 weeks before start of study treatment\n* Major surgery (excl. placement of vascular access, transurethral resection of prostate, bilateral orchiectomy, internal stents) within 4 weeks of start of study treatment\n* Brain metastases,or spinal cord compression (unless spinal cord compression is asymptomatic and stable and not requiring steroids for at least 4 weeks prior to start of study treatment)\n* Any of the following cardiac criteria:\n\n  i. Mean resting corrected QT interval (QTc) \\>470 msec from 3 consecutive ECGs ii. Any clinically important abnormalities in rhythm, conduction or morphology of resting ECG iii. Any factors that increase the risk of QTc prolongation or risk of arrhythmic events such as heart failure, hypokalaemia, potential for torsades de pointes, congenital long QT syndrome, family history of long QT syndrome or unexplained sudden death under 40 years of age,or any concomitant medication known to prolong the QT interval iv. Experience of any of the following procedures or conditions in the preceding 3 months: coronary artery bypass graft, vascular stent, myocardial infarction, unstable angina pectoris, congestive heart failure NYHA Grade ≥2 v. Symptomatic hypotension - systolic blood pressure \\<90 mmHg and/or diastolic blood pressure \\<50 mmHg vi. haemodinamic instability\n* Clinically significant abnormalities of glucose metabolism as defined by any of the following:\n\n  i. Patients with diabetes mellitus (DM) type 1 or DM type 2 requiring insulin treatment ii. HbA1c ≥8.0% (63.9 mmol/mol)\n* Inadequate bone marrow reserve or organ function as demonstrated by any of the following laboratory values:\n\n  i. Absolute neutrophil count \\< 1.5x 10\\^9/L ii. Platelet count \\< 100x 10\\^9/L iii. Haemoglobin \\< 9 g/dL (\\< 5.59 mmol/L) iv. Alanine aminotransferase (ALT) and aspartate aminotransferase (AST) \\> 2.5x upper limit of normal (ULN) if no demonstrable liver metastases or \\> 5x ULN in the presence of liver metastases. Elevated alkaline phosphatase (ALP) is not exclusionary if due to the presence of bone metastases and liver function is otherwise considered adequate in the investigator's judgement v. Total bilirubin \\> 1.5x ULN (participants with confirmed Gilbert's syndrome may be included in the study with a higher value) vi. Creatinine clearance \\< 50 mL/min per the Cockcroft and Gault formula without the need for chronic dialysis;\n* As judged by the investigator, any evidence of diseases (including severe or uncontrolled systemic diseases, uncontrolled hypertension, history of interstitial pneumonia / pneumonitis or interstitial lung disease, renal transplant and active bleeding diseases), which, in the investigator's opinion, makes it undesirable for the patient to participate in the study or that would jeopardise compliance with the protocol.\n* Refractory nausea and vomiting, malabsorption syndrome, chronic gastrointestinal diseases, inability to swallow the formulated product or previous significant bowel resection, or other condition that would preclude adequate absorption of capivasertib\n* Any other disease, physical examination finding, or clinical laboratory finding that, in the investigator's opinion, gives reasonable suspicion of a disease or condition that contra-indicates the use of an investigational drug, may affect the interpretation of the results, render the patient at high risk from treatment complications or interferes with obtaining informed consent. Evidence of dementia, altered mental status, or any psychiatric condition that would prohibit understanding or rendering of informed consent.\n* Previous allogeneic bone marrow transplant or solid organ transplant\n* History of another primary malignancy except for malignancy treated with curative intent with no known active disease ≥2 years before the first dose of study intervention and of low potential risk for recurrence. Exceptions include adequately resected non-melanoma skin cancer and curatively treated in situ disease.\n* Persistent toxicities (CTCAE Grade ≥2) caused by previous anticancer therapy, excluding alopecia. Patients with irreversible toxicity that is not reasonably expected to be exacerbated by study intervention in the opinion of the investigator may be included (eg, hearing loss)\n* Known to have active hepatitis infection.\n* Known to have human immunodeficiency virus (HIV) with a detectable viral RNA load or a CD4+ T-cell count \\< 350 cells/uL or a history of an acquired immunodeficiency syndrome (AIDS)-defining opportunistic infection within the past 12 months, or receiving anti-HIV medications for less than 4 weeks.\n* Known to have active tuberculosis infection (clinical evaluation that may include clinical history, physical examination and radiographic findings, or tuberculosis testing in line with local practice).\n* Treatment with any of the following:\n\n  i. Prior chemotherapy for CRPC. Chemotherapy for metastatic or localized HSPC (including docetaxel) is allowed provided that chemotherapy was completed ≥ 6months before randomisation and progression of the prostate cancer occurred ≥ 6months after the completion of therapy.\n\nii. Prior exposure to AKT inhibitors or PI3K inhibitors iii. Any investigational agents or study drugs from a previous clinical study within 30 days or 5 half-lives (whichever is longer) of the first dose of study treatment iv. Any other immunotherapy, immunosuppressant medication (other than corticosteroids) or anticancer agents (except ADT) within 3 weeks of the first dose of study treatment v. Strong inhibitors or strong inducers of cytochrome P450 (CYP)3A4 within 2 weeks prior to the first dose of study treatment (3 weeks for St John's wort), vi.Use of any live vaccine administration 30 days prior to the initiation of study treatment, during, and for at least 90 days after the last dose of the study treatment\n\n* Drugs known to significantly prolong the QT interval and associated with Torsade de Pointes within 5 half-lives of the first dose of study treatment\n* History of hypersensitivity to active or inactive excipients of capivasertib, docetaxel, or drugs with a similar chemical structure or class\n* Any restriction or contraindication based on the local prescribing information that would prohibit the use of docetaxel",
+                  "healthyVolunteers": false,
+                  "sex": "MALE",
+                  "minimumAge": "18 Years",
+                  "maximumAge": "130 Years"
+              }
+          }
+      }
+  ]
+}

@@ -37,6 +37,10 @@ def write_data_characteristics(data, thread_id):
 def set_characteristics(data, thread_id="thrd_001_unknown"):
   user_data = read_data_characteristics(thread_id)
   data_keys = data.keys()
+  
+  # if 'is_remove' in data_keys:
+  #   if data['is_remove']:
+  #     todo: implement removal of information
 
   if 'age' in data_keys:
     user_data['age'] = data['age']

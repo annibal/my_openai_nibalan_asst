@@ -1,0 +1,69 @@
+⮚ You: Hello! What should i do in order to find clinical trials?
+⋖ Assistant: I will assist you in finding clinical trials. Would you kindly inform me your Age, Sex and Location?
+⮚ You: 29, male, São paulo ,brazil
+
+┗🠊 ◯ Tool Call: name='save_characteristics' args='{"age":"29","sex":"male","location":"-23.5505,-46.6333","is_remove":"add"}'
+⎇ Debug: No user data found, creating empty
+┗🠊 ⦿ Tool Result for save_characteristics: { success: "true" }
+sending system message with flow instructions
+⌘ System: On the user's next message, you can already search for trials
+⋖ Assistant: Are you suffering from any condition or illness?
+⮚ You: ⛒ empty ⬎
+⮚ You: diarrhea, diabetes, headache and knee pain
+┗🠊 ◯ Tool Call: name='save_characteristics' args='{"condition":"diarrhea, diabetes, headache, knee pain","is_remove":"add"}'
+┗🠊 ⦿ Tool Result for save_characteristics: { success: "true" }
+⋖ Assistant: Searching for clinical trials now.
+⮚ You: ok
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age":"29","sex":"male","location":"-23.5505,-46.6333","distance":"50","distance_unit":"km","condition":"diarrhea, diabetes, headache, knee pain"}'
+┗🠊 ⦿ Tool Result for get_trials:
+
+{'totalCount': 7, 'studies': [{'protocolSecti ... }
+
+⋖ Assistant: Here are some clinical trials that might fit your conditions:
+
+1. **Title:** Open-Label Extension Study of Marstacimab in Hemophilia Participants
+   - **Conditions:** Hemophilia A, Hemophilia B
+   - **Status:** Recruiting
+
+2. **Title:** A Trial to Compare Efficacy and Safety of Follitropin Delta Versus Placebo in the Treatment of Men With Idiopathic Infertility
+   - **Condition:** Male Idiopathic Infertility
+   - **Status:** Recruiting
+
+3. **Title:** Testosterone Replacement in Male Cancer Survivors With Fatigue and Low Testosterone
+   - **Conditions:** Hypogonadism, Male; Fatigue Syndrome, Chronic
+   - **Status:** Recruiting
+
+4. **Title:** Injectable DMAU for Male Contraception in Healthy Male Volunteers
+   - **Conditions:** Healthy Men, Male Contraception
+   - **Status:** Recruiting
+
+5. **Title:** Optimizing Infection Prophylaxis Prior to Shoulder Surgery
+   - **Conditions:** Arthroplasty Shoulder, Periprosthetic Joint Infection
+   - **Status:** Not Yet Recruiting
+
+6. **Title:** Sequential Testosterone and Enzalutamide Prevents Unfavorable Progression
+   - **Condition:** Castration Resistant Metastatic Prostate Cancer
+   - **Status:** Recruiting
+
+7. **Title:** Study of Capivasertib + Docetaxel vs Placebo + Docetaxel as Treatment for Metastatic Castration Resistant Prostate Cancer
+   - **Condition:** Prostate Cancer
+   - **Status:** Recruiting
+
+Would you like more details on any of these?
+⮚ You: I smoked marihuana today. Can i still participate in these?
+⋖ Assistant: For most clinical trials, the use of marijuana might disqualify you from participation. Would you like me to check if your marijuana use affects your eligibility for any specific trials?
+⮚ You: yes
+┗🠊 ◯ Tool Call: name='show_trial' args='{"nctid": "NCT05145127"}'
+┗🠊 ◯ Tool Call: name='show_trial' args='{"nctid": "NCT05403476"}'
+┗🠊 ◯ Tool Call: name='show_trial' args='{"nctid": "NCT04049331"}'
+┗🠊 ◯ Tool Call: name='show_trial' args='{"nctid": "NCT02927210"}'
+┗🠊 ◯ Tool Call: name='show_trial' args='{"nctid": "NCT06464770"}'
+┗🠊 ◯ Tool Call: name='show_trial' args='{"nctid": "NCT04363164"}'
+┗🠊 ◯ Tool Call: name='show_trial' args='{"nctid": "NCT05348577"}'
+┗🠊 ⦿ Tool Result for show_trial: []
+┗🠊 ⦿ Tool Result for show_trial: []
+┗🠊 ⦿ Tool Result for show_trial: []
+┗🠊 ⦿ Tool Result for show_trial: []
+┗🠊 ⦿ Tool Result for show_trial: []
+┗🠊 ⦿ Tool Result for show_trial: []
+┗🠊 ⦿ Tool Result for show_trial: []

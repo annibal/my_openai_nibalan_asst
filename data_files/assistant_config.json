@@ -159,10 +159,7 @@
           },
           "required": [
             "age",
-            "sex",
-            "location",
-            "distance",
-            "study_type"
+            "sex"
           ]
         }
       }
@@ -197,6 +194,14 @@ Every time the user answers your questions, call this function, even if the answ
         "parameters": {
           "type": "object",
           "properties": {
+            "is_remove": {
+              "type": "string",
+              "description": "Whether to add or to remove the information",
+              "enum": [
+                "add",
+                "remove"
+              ]
+            },
             "age": {
               "type": "string",
               "description": "User's age, in years"
@@ -230,7 +235,10 @@ Every time the user answers your questions, call this function, even if the answ
               "description": "Trials that the user cannot join. Format: comma-separated list of NCTIds"
             }
           }
-        }
+        },
+        "required": [
+          "is_remove"
+        ]
       }
     },
     {

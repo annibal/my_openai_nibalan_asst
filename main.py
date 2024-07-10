@@ -9,6 +9,10 @@ from termcolor import colored
 messages = []
 thread_uuid = str(uuid.uuid4())
 
+# https://cookbook.openai.com/examples/how_to_format_inputs_to_chatgpt_models
+# https://cookbook.openai.com/examples/how_to_call_functions_with_chat_models
+# https://cookbook.openai.com/examples/how_to_call_functions_for_knowledge_retrieval
+
 def send_msg(obj_msg, debug=False):
   tprint(fmt_msg(obj_msg), debug=debug, header=False)
   messages.append(obj_msg)
@@ -79,7 +83,7 @@ async def main():
 
         tool_msg = {
           "content": results,
-          "role": "tool",
+          "role": "tool", # the 4th role
           "name":  tool_call_cfg.function.name, 
           "tool_call_id": tool_call_cfg.id,
         }
