@@ -1,8 +1,12 @@
 import sys
+import os
+import time
 from termcolor import colored
 
 is_debug = False
 is_verbose = False
+
+
 
 def print_header():
   print(colored("""
@@ -82,7 +86,7 @@ def fmt_msg(message):
     
     if isinstance(message, dict):
       if message["role"] == "tool":
-        msg = colored(f'🞚 Tool Result', 'yellow')
+        msg = get_role_header("tool_result")
         msg += " for "
         msg += colored(message['name'], "yellow")
         msg += ": "
@@ -110,7 +114,7 @@ def fmt_msg(message):
       return msg
 
     if message.tool_calls:
-      msg = ""
+      msg = ""  
       for item in message.tool_calls:
         msg += get_role_header("tool_call")
         msg += ": "

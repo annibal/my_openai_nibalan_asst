@@ -1,3 +1,4 @@
+import asyncio
 from openai import OpenAI
 from tenacity import retry, wait_random_exponential, stop_after_attempt
 from helpers.terminal_helpers import tprint
@@ -11,7 +12,7 @@ client = OpenAI(
 )
 
 @retry(wait=wait_random_exponential(multiplier=1, max=40), stop=stop_after_attempt(3))
-def chat_completion_request(messages, **kwargs):
+async def chat_completion_request(messages, **kwargs):
   
   tprint("requesting GPT chat completion", verbose=True)
   try:

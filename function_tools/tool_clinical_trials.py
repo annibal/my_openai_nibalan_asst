@@ -1,5 +1,14 @@
 
 def list_trials(filters):
+  # age
+  # sex
+  # location
+  # distance
+  # distance_unit
+  # study_type
+  # condition
+  # term
+  
   # https://clinicaltrials.gov/data-api/api
   results = []
   return results;

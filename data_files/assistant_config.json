@@ -10,7 +10,7 @@
   "metadata": {},
   "response_format": "auto",
 
-  "tools": [
+  "tools_deactivated": [
     {
       "type": "function",
       "function": {
@@ -26,75 +26,6 @@
           },
           "required": [
             "message"
-          ]
-        }
-      }
-    },
-    {
-      "type": "function",
-      "function": {
-        "name": "check_eligibility_criteria",
-        "description": "Gets instructions for the next message. This should be called for every prompt the user provides. If other functions are called, this function should also be called in parallel.",
-        "parameters": {
-          "type": "object",
-          "properties": {
-            "message": {
-              "type": "string",
-              "description": "The intent inferred from the user's last message"
-            }
-          },
-          "required": [
-            "message"
-          ]
-        }
-      }
-    },
-    {
-      "type": "function",
-      "function": {
-        "name": "save_characteristics",
-        "description": "When the user provides information about itself, call this function to store them, to use later",
-        "parameters": {
-          "type": "object",
-          "properties": {
-            "age": {
-              "type": "string",
-              "description": "User's age, in years"
-            },
-            "sex": {
-              "type": "string",
-              "description": "User's biological sex",
-              "enum": [
-                "male",
-                "female"
-              ]
-            },
-            "location": {
-              "type": "string",
-              "description": "An area, place, city or neighborhood. Format: latitude, longitude. If the user provides city and state, infer the closest latitude and longitude."
-            },
-            "condition": {
-              "type": "string",
-              "description": "Diseases or Health conditions. Format: comma-separated values"
-            },
-            "term": {
-              "type": "string",
-              "description": "Any other clinical terms"
-            },
-            "liked_trials": {
-              "type": "string",
-              "description": "Trials that the user wants to know more about. Format: nctids, comma-separated"
-            },
-            "bad_trials": {
-              "type": "string",
-              "description": "Trials that the user cannot join. Format: nctids, comma-separated"
-            }
-          },
-          "required": [
-            "age",
-            "sex",
-            "location",
-            "condition"
           ]
         }
       }
@@ -124,39 +55,6 @@
           },
           "required": [
             "context"
-          ]
-        }
-      }
-    },
-    {
-      "type": "function",
-      "function": {
-        "name": "get_weather",
-        "description": "Get information about the weather",
-        "parameters": {
-          "type": "object",
-          "properties": {
-            "location": {
-              "type": "string",
-              "description": "An area, place, city or neighborhood. Format: latitude, longitude. If the user provides city and state, infer the closest latitude and longitude."
-            },
-            "unit": {
-              "type": "string",
-              "enum": [
-                "celsius",
-                "fahrenheit"
-              ],
-              "description": "The temperature unit to use. Infer this from the users location."
-            },
-            "date": {
-              "type": "string",
-              "description": "The date to get the weather from. Max 2 weeks from now. Default to today. Format YYYY-MM-DD"
-            }
-          },
-          "required": [
-            "location",
-            "unit",
-            "date"
           ]
         }
       }
@@ -198,6 +96,172 @@
           "required": [
             "language",
             "entity"
+          ]
+        }
+      }
+    }
+
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "get_trials",
+        "description": "When asked to, gets a list of clinical trials that the user might be eligible to participate.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "age": {
+              "type": "string",
+              "description": "User's age, in years"
+            },
+            "sex": {
+              "type": "string",
+              "description": "User's biological sex",
+              "enum": [
+                "male",
+                "female"
+              ]
+            },
+            "location": {
+              "type": "string",
+              "description": "An area, place, city or neighborhood to find clinical trials nearby. Format: latitude, longitude. infer the closest latitude and longitude."
+            },
+            "distance": {
+              "type": "string",
+              "description": "How much the user is willing to travel from the 'location' center in order to participate in a trial."
+            },
+            "distance_unit": {
+              "type": "string",
+              "description": "The distance unit to use. Do not directly ask this, instead infer from the message, or from the user's location or language.",
+              "enum": [
+                "km",
+                "mi"
+              ]
+            },
+            "study_type": {
+              "type": "string",
+              "description": "Which type of study the user prefers. If the user lacks knowledge about what they mean, you may present this image https://clinicaltrials.gov/assets/images/types_of_research.png, but only once.",
+              "enum": [
+                "interventional",
+                "observational",
+                "no_preference"
+              ]
+            },
+            "condition": {
+              "type": "string",
+              "description": "Diseases or Health conditions."
+            },
+            "term": {
+              "type": "string",
+              "description": "Any other clinical terms."
+            }
+          },
+          "required": [
+            "age",
+            "sex",
+            "location",
+            "distance",
+            "study_type"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "show_trial",
+        "description": "Get detailed information about a clinical trial",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "nctid": {
+              "type": "string",
+              "description": "The NCTId of the clinical trial."
+            }
+          },
+          "required": [
+            "nctid"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "save_characteristics",
+        "description": "
+Any time the the user provides information about itself, call this function to store them. For example: I live in, I am, I have, I'm this, I'm that, I was born at etc.
+Also, when user responds to a question about his information, provide it in this tool call.
+Every time the user answers your questions, call this function, even if the answer is no, i don't, none, nothing etc.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "age": {
+              "type": "string",
+              "description": "User's age, in years"
+            },
+            "sex": {
+              "type": "string",
+              "description": "User's biological sex",
+              "enum": [
+                "male",
+                "female"
+              ]
+            },
+            "location": {
+              "type": "string",
+              "description": "The area, place, city or neighborhood of interest to the user, or that the user lives in, or that the user is currently. Format: latitude, longitude. infer the closest latitude and longitude."
+            },
+            "condition": {
+              "type": "string",
+              "description": "Diseases or Health conditions the user has."
+            },
+            "term": {
+              "type": "string",
+              "description": "Any other clinical terms provided by the user, about itself"
+            },
+            "chosen_trials": {
+              "type": "string",
+              "description": "Trials that the user is able to participate, and demonstrated interest in. Format: comma-separated list of NCTIds"
+            },
+            "unable_to_participate_trials": {
+              "type": "string",
+              "description": "Trials that the user cannot join. Format: comma-separated list of NCTIds"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_weather",
+        "description": "Get information about the weather",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "location": {
+              "type": "string",
+              "description": "An area, place, city or neighborhood. Format: latitude, longitude. If the user provides city and state, infer the closest latitude and longitude."
+            },
+            "unit": {
+              "type": "string",
+              "enum": [
+                "celsius",
+                "fahrenheit"
+              ],
+              "description": "The temperature unit to use. Infer this from the users location."
+            },
+            "date": {
+              "type": "string",
+              "description": "The date to get the weather from. Max 2 weeks from now. Default to today. Format YYYY-MM-DD"
+            }
+          },
+          "required": [
+            "location",
+            "unit",
+            "date"
           ]
         }
       }
