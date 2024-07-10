@@ -10,6 +10,6 @@ def read_obj(path):
     return False
 
 def write_obj(path, data):
-  f = open(path, "w")
+  f = open(path, "w+")
   f.write(json.dumps(data))
   f.close();

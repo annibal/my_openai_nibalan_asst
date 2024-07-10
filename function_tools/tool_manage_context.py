@@ -1,7 +1,7 @@
 file_name = ".current_chat_context" 
 
 def set_chat_context(ctx):
-  f = open(file_name, "w")
+  f = open(file_name, "w+")
   f.write(str(ctx))
   f.close();
 
