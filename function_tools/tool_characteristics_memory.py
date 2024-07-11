@@ -17,6 +17,7 @@ def read_data_characteristics(thread_id):
       "longitude": None,
       "conditions": [],
       "terms": [],
+      "has_listed_trials": False,
       "good_trials": [],
       "bad_trials": [],
     }
@@ -42,6 +43,9 @@ def set_characteristics(data, thread_id="thrd_001_unknown"):
   #   if data['is_remove']:
   #     todo: implement removal of information
 
+  if 'has_listed_trials' in data_keys:
+    user_data['has_listed_trials'] = bool(data['has_listed_trials'])
+
   if 'age' in data_keys:
     user_data['age'] = data['age']
 
@@ -60,12 +64,12 @@ def set_characteristics(data, thread_id="thrd_001_unknown"):
     new_terms = data['term'].split(",")
     user_data['terms'].extend(new_terms)
 
-  if 'chosen_trials' in data_keys:
-    new_trials = data['chosen_trials'].split(",")
+  if 'bad_trials' in data_keys:
+    new_trials = data['bad_trials'].split(",")
     user_data['bad_trials'].extend(new_trials)
 
-  if 'unable_to_participate_trials' in data_keys:
-    new_trials = data['unable_to_participate_trials'].split(",")
+  if 'good_trials' in data_keys:
+    new_trials = data['good_trials'].split(",")
     user_data['good_trials'].extend(new_trials)
 
   write_data_characteristics(user_data, thread_id)

@@ -1,0 +1,86 @@
+⮚ You: Hello! What should i do in order to find clinical trials?
+⋖ Assistant: I will assist you in finding clinical trials. Would you kindly inform me your Age, Sex, and Location?
+⮚ You: 29, male
+⋖ Assistant: What's your location?
+⮚ You: how many trials can i participate, if i am 29 years old male?
+⋖ Assistant: Location is required to provide more accurate data.
+⮚ You: São paulo ,brazil
+┗🠊 ◯ Tool Call: name='save_characteristics' args='{"age":"29","sex":"male","location":"-23.5505,-46.6333","is_remove":"add"}'
+⎇ Debug: No user data found, creating empty
+┗🠊 ⦿ Tool Result for save_characteristics: { success: "true" }
+sending system message with flow instructions
+⌘ System: On the user's next message, you can already search for trials
+⋖ Assistant: Are you suffering from any condition or illness?
+⮚ You: search trials now
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age":"29","sex":"male","location":"-23.5505,-46.6333","distance":"50","distance_unit":"km","study_type":"no_preference"}'
+┗🠊 ⦿ Tool Result for get_trials: Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials
+sending system message with flow instructions
+⌘ System: On the user's next message, you can already search for trials
+⋖ Assistant: Could you specify if you have any condition or illness?
+⮚ You: i have diabetes
+┗🠊 ◯ Tool Call: name='save_characteristics' args='{"condition": "diabetes", "is_remove": "add"}'
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age": "29", "sex": "male", "location": "-23.5505,-46.6333", "distance": "50", "distance_unit": "km", "study_type": "no_preference", "condition": "diabetes"}'
+┗🠊 ⦿ Tool Result for save_characteristics: { success: "true" }
+┗🠊 ⦿ Tool Result for get_trials: Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials
+⋖ Assistant: Diabetes has many different forms and specific conditions. What type of diabetes do you have? For example, Type 1 or Type 2?
+⮚ You: type 1
+┗🠊 ◯ Tool Call: name='save_characteristics' args='{"term": "type 1 diabetes", "is_remove": "add"}'
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age": "29", "sex": "male", "location": "-23.5505,-46.6333", "distance": "50", "distance_unit": "km", "study_type": "no_preference", "condition": "type 1 diabetes"}'
+┗🠊 ⦿ Tool Result for save_characteristics: { success: "true" }
+┗🠊 ⦿ Tool Result for get_trials: Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials
+sending system message with flow instructions
+⌘ System: You must search for trials, but only after the next message.
+⋖ Assistant: Do you have any other medical conditions or preferences for the type of study?
+⮚ You: i have ear infection
+┗🠊 ◯ Tool Call: name='save_characteristics' args='{"condition": "ear infection", "is_remove": "add"}'
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age": "29", "sex": "male", "location": "-23.5505,-46.6333", "distance": "50", "distance_unit": "km", "study_type": "no_preference", "condition": "type 1 diabetes,ear infection"}'
+┗🠊 ⦿ Tool Result for save_characteristics: { success: "true" }
+┗🠊 ⦿ Tool Result for get_trials: Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials
+sending system message with flow instructions
+⌘ System: You must search for trials, but only after the next message.
+⋖ Assistant: Are there any specific types of treatments or therapies you are interested in?
+⮚ You: ozempic
+┗🠊 ◯ Tool Call: name='save_characteristics' args='{"term": "ozempic", "is_remove": "add"}'
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age": "29", "sex": "male", "location": "-23.5505,-46.6333", "distance": "50", "distance_unit": "km", "study_type": "no_preference", "condition": "type 1 diabetes, ear infection", "term": "ozempic"}'
+┗🠊 ⦿ Tool Result for save_characteristics: { success: "true" }
+┗🠊 ⦿ Tool Result for get_trials: Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials
+sending system message with flow instructions
+⌘ System: You must search for trials, but only after the next message.
+⋖ Assistant: Any other details that might help narrow down the trials? For example, study length or phase preferences?
+⮚ You: oh i also have diarrhea
+┗🠊 ◯ Tool Call: name='save_characteristics' args='{"condition": "diarrhea", "is_remove": "add"}'
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age": "29", "sex": "male", "location": "-23.5505,-46.6333", "distance": "50", "distance_unit": "km", "study_type": "no_preference", "condition": "type 1 diabetes, ear infection, diarrhea", "term": "ozempic"}'
+┗🠊 ⦿ Tool Result for save_characteristics: { success: "true" }
+┗🠊 ⦿ Tool Result for get_trials: Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials
+sending system message with flow instructions
+⌘ System: You must search for trials, but only after the next message.
+⋖ Assistant: Do you have a preferred study phase (e.g., Phase 1, Phase 2, Phase 3, Phase 4)?
+⮚ You: any phase
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age":"29","sex":"male","location":"-23.5505,-46.6333","distance":"25","distance_unit":"km","study_type":"no_preference","condition":"type 1 diabetes, ear infection, diarrhea","term":"ozempic"}'
+┗🠊 ⦿ Tool Result for get_trials: Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials
+sending system message with flow instructions
+⌘ System: You must search for trials, but only after the next message.
+⋖ Assistant: Are you currently taking any medications or have any recent medical history that might affect your eligibility for a trial?
+⮚ You: i have mijação forte demais
+┗🠊 ◯ Tool Call: name='save_characteristics' args='{"term": "excessive urination", "is_remove": "add"}'
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age": "29", "sex": "male", "location": "-23.5505,-46.6333", "distance": "25", "distance_unit": "km", "study_type": "no_preference", "condition": "type 1 diabetes, ear infection, diarrhea", "term": "ozempic, excessive urination"}'
+┗🠊 ⦿ Tool Result for save_characteristics: { success: "true" }
+┗🠊 ⦿ Tool Result for get_trials: Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials
+sending system message with flow instructions
+⌘ System: You must search for trials, but only after the next message.
+⋖ Assistant: Any specific healthcare facilities or hospitals you prefer for the trials?
+⮚ You: i have flu
+┗🠊 ◯ Tool Call: name='save_characteristics' args='{"condition": "flu", "is_remove": "add"}'
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age": "29", "sex": "male", "location": "-23.5505,-46.6333", "distance": "25", "distance_unit": "km", "study_type": "no_preference", "condition": "type 1 diabetes, ear infection, diarrhea, flu", "term": "ozempic, excessive urination"}'
+┗🠊 ⦿ Tool Result for save_characteristics: { success: "true" }
+┗🠊 ⦿ Tool Result for get_trials: Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials
+sending system message with flow instructions
+⌘ System: You must search for trials, but only after the next message.
+⋖ Assistant: Do you have any preferences regarding trial duration or trial sponsors?
+⮚ You: any duration
+┗🠊 ◯ Tool Call: name='get_trials' args='{"age":"29","sex":"male","location":"-23.5505,-46.6333","distance":"10","distance_unit":"km","study_type":"no_preference","condition":"type 1 diabetes, ear infection, diarrhea, flu","term":"ozempic, excessive urination"}'
+┗🠊 ⦿ Tool Result for get_trials: Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials
+sending system message with flow instructions
+⌘ System: You must search for trials, but only after the next message.
+⋖ Assistant: Any preference for the type of intervention, such as medication, behavioral therapy, or device?
+⮚ You: ^C

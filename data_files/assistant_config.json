@@ -150,11 +150,11 @@
             },
             "condition": {
               "type": "string",
-              "description": "Diseases or Health conditions."
+              "description": "Diseases or Health conditions. Format as a comma-separated list of keywords."
             },
             "term": {
               "type": "string",
-              "description": "Any other clinical terms."
+              "description": "Any other clinical terms.. Format as a comma-separated list of keywords."
             }
           },
           "required": [
@@ -220,25 +220,55 @@ Every time the user answers your questions, call this function, even if the answ
             },
             "condition": {
               "type": "string",
-              "description": "Diseases or Health conditions the user has."
+              "description": "Diseases or Health conditions the user has. Format as a comma-separated list of keywords."
             },
             "term": {
               "type": "string",
-              "description": "Any other clinical terms provided by the user, about itself"
-            },
-            "chosen_trials": {
-              "type": "string",
-              "description": "Trials that the user is able to participate, and demonstrated interest in. Format: comma-separated list of NCTIds"
-            },
-            "unable_to_participate_trials": {
-              "type": "string",
-              "description": "Trials that the user cannot join. Format: comma-separated list of NCTIds"
+              "description": "Any other clinical terms provided by the user, about itself. Format as a comma-separated list of keywords."
             }
           }
         },
         "required": [
           "is_remove"
         ]
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "add_chosen_trial",
+        "description": "Utility to help managing the trials of interest - adds a clinical trial, which the user is eligible for, in the list of clinical trials that the user has shown positive interest, or confirmed that, it wants to participate.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "nctid": {
+              "type": "string",
+              "description": "The NCTId of the clinical trial."
+            }
+          },
+          "required": [
+            "nctid"
+          ]
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "add_ineligible_trial",
+        "description": "Used to mark a trial as not eligible. Called when there is 100% certainty that the user is excluded from the trial",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "nctid": {
+              "type": "string",
+              "description": "The NCTId of the clinical trial."
+            }
+          },
+          "required": [
+            "nctid"
+          ]
+        }
       }
     },
     {

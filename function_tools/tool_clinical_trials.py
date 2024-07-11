@@ -1,5 +1,5 @@
 from helpers.fs_helper import read_obj
-from function_tools.tool_characteristics_memory import read_data_characteristics
+from function_tools.tool_characteristics_memory import set_characteristics, read_data_characteristics
 
 def list_trials(filters, thread_id):
   data = read_data_characteristics(thread_id)
@@ -53,6 +53,7 @@ def list_trials(filters, thread_id):
   # if len(results) > 100:
   if 'conditions' in data.keys() and len(data['conditions']) > 3:
     mocked_7_trials_result = read_obj("./data_files/example_dump_7_trials.json")
+    set_characteristics({ "has_listed_trials": True }, thread_id)
     return mocked_7_trials_result
   
   return "Too many trials were found, ask another question about either the user's conditions, clinical terms etc., to further narrow down the trials"

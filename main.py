@@ -18,7 +18,7 @@ def send_msg(obj_msg, debug=False):
   messages.append(obj_msg)
 
 async def main():
-  tprint(f"thread id: '{thread_uuid}", verbose=True)
+  tprint(f">>> thread id: '{thread_uuid}", verbose=True)
   print_header()
   parse_args()
   nb = read_obj("./data_files/assistant_config.json")

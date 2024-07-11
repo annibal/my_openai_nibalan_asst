@@ -59,6 +59,14 @@ async def handle_tool_call(fn_name, fn_args, thread_id="thrd_000_unknown"):
   if fn_name == "save_characteristics":
     results = set_characteristics(obj_args, thread_id)
 
+  # Active
+  if fn_name == "add_chosen_trial":
+    results = set_characteristics({ 'good_trials': obj_args['nctid'] }, thread_id)
+
+  # Active
+  if fn_name == "add_ineligible_trial":
+    results = set_characteristics({ 'bad_trials': obj_args['nctid'] }, thread_id)
+
   tprint(f"finished tool call with results: '{str(results)}'", verbose=True)
   return str(results)
 
@@ -74,6 +82,15 @@ async def handle_flow_instructions(thread_id):
   has_terms = bool(data['terms'])
   has_bad_trials = bool(data['bad_trials'])
   has_good_trials = bool(data['good_trials'])
+  has_listed_trials = bool(data['has_listed_trials'])
+
+  if has_listed_trials:
+    r = "Proceed to discuss about trials. If you identify an information that is different from the previously provided characteristics about the user, save it, and refresh the list of trials by performing a new search."
+    if has_bad_trials:
+      r += " Remember to inform to the user that these trials are likely to be eligible, and were positively marked as interest: " + data['bad_trials'].join(", ") + "."
+    if has_good_trials:
+      r += " Exclude the trials already marked as not eligible: " + data['good_trials'].join(", ") + "."
+    return r;
 
   if has_age and has_sex and has_latitude and has_longitude and not has_conditions and not has_terms:
     return "On the user's next message, you can already search for trials"

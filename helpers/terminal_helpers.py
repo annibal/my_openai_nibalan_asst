@@ -1,6 +1,7 @@
 import sys
 import os
 import time
+import datetime
 from termcolor import colored
 
 is_debug = False
@@ -76,7 +77,8 @@ def tprint(str, debug=False, verbose=False, header=True):
       print(str)
       return
     str_header = get_role_header("default")
-    print(f"{str_header} [YYYY-MM-DD HH:mm:ss] {str}")
+    str_datetime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    print(f"{str_header} [{str_datetime}] {str}")
     return
 
   print(str)
