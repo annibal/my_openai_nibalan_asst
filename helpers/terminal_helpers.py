@@ -45,9 +45,9 @@ def read_prompt_message():
     role = get_role_header("user")
     user_input = input(f"{role}: ").strip()
     
-    if user_input.lower().startswith("system: "):
+    if user_input.lower().startswith("/system"):
       tprint("treating prompt message with system role instead of user", verbose=True)
-      return {"role": "system", "content": user_input.removeprefix("system: ")}
+      return {"role": "system", "content": user_input.removeprefix("/system").strip()}
     
     tprint("prompt message received", verbose=True)
     return {"role": "user", "content": user_input}

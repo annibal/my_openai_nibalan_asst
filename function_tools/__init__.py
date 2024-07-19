@@ -61,11 +61,18 @@ async def handle_tool_call(fn_name, fn_args, thread_id="thrd_000_unknown"):
 
   # Active
   if fn_name == "add_chosen_trial":
-    results = set_characteristics({ 'good_trials': obj_args['nctid'] }, thread_id)
+    try:
+      results = set_characteristics({ 'good_trials': obj_args['nctid'] }, thread_id)
+    except Exception as e:
+      tprint(f"error: good_trials", verbose=True)
+
 
   # Active
   if fn_name == "add_ineligible_trial":
-    results = set_characteristics({ 'bad_trials': obj_args['nctid'] }, thread_id)
+    try:
+      results = set_characteristics({ 'bad_trials': obj_args['nctid'] }, thread_id)
+    except Exception as e:
+      tprint(f"error: bad_trials", verbose=True)
 
   tprint(f"finished tool call with results: '{str(results)}'", verbose=True)
   return str(results)

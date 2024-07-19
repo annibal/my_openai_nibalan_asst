@@ -29,7 +29,7 @@ async def main():
 
   extra_instructions = read_obj("./data_files/more_instructions.json")
   for msg in extra_instructions['messages']:
-    send_msg({ "role": "system", "content": msg })
+    send_msg({ "role": "system", "content": msg }, True)
   tprint("sent initial GPT purpose instructions", verbose=True)
   
   send_msg({ "role": "user", "content": "Hello! What should i do in order to find clinical trials?" }, True)
@@ -98,7 +98,7 @@ async def main():
 
       tprint(f"flow instructions are: '{flow_message}'", verbose=True)
       if flow_message:
-        tprint("sending system message with flow instructions")
+        tprint("sending system message with flow instructions", verbose=True)
         flow_message_obj = {"role": "system", "content": flow_message }
         messages.append(flow_message_obj)
         tprint(fmt_msg(flow_message_obj), debug=True, header=False)

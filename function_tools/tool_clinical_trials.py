@@ -1,19 +1,7 @@
 from helpers.fs_helper import read_obj
 from function_tools.tool_characteristics_memory import set_characteristics, read_data_characteristics
 
-def list_trials(filters, thread_id):
-  data = read_data_characteristics(thread_id)
-  # age
-  # sex
-  # location
-  # distance
-  # distance_unit
-  # study_type
-  # condition
-  # term
-  
-  # https://clinicaltrials.gov/data-api/api
-
+def get_missing_parameters_message(data):
   has_age = bool(data['age'])
   has_sex = bool(data['sex'])
   has_latitude = bool(data['latitude'])
@@ -47,6 +35,48 @@ def list_trials(filters, thread_id):
 
   if is_missing_info:
     return "To list trials, you need to know at least the " + missing_info.join(", ") + " from the user"
+  
+  return False
+
+
+def list_trials(filters, thread_id):
+  data = read_data_characteristics(thread_id)
+
+  missing_info_msg = get_missing_parameters_message(data)
+  if not missing_info_msg == False:
+    return missing_info_msg
+  
+
+  # age
+  # sex
+  # location
+  # distance
+  # distance_unit
+  # study_type
+  # condition
+  # term
+  # ...
+  
+  # https://clinicaltrials.gov/data-api/api
+  # ?format=json&countTotal=true&pageSize=1000&query.cond=marstacimab&filter.overallStatus=NOT_YET_RECRUITING|RECRUITING&filter.geo=distance(47.611351,-122.337297,13mi)&filter.advanced=AREA[MinimumAge]RANGE[MIN,+29+years]+AREA[MaximumAge]RANGE[29+years,+MAX]+AREA[Sex]Male&fields=NCTId|BriefTitle|OfficialTitle|BriefSummary|DetailedDescription|OverallStatus|StartDate|PrimaryCompletionDate|CompletionDate|StudyFirstSubmitDate|LastUpdateSubmitDate|ConditionsModule|EligibilityCriteria|HealthyVolunteers|Sex|MinimumAge|MaximumAge|EnrollmentInfo
+
+  # https://clinicaltrials.gov/api/v2/studies
+
+  # NOT AREA[LastKnownStatus]MISSING
+  # AREA[MinimumAge]MISSING OR AREA[MaximumAge]MISSING OR AREA[Sex]MISSING
+
+  #   {
+  #     "format": "json",
+  #     "pageToken": "NF0g5JaPlvE",
+  #     "countTotal": "true",
+  #     "pageSize": "1000",
+  #     "query.cond": "marstacimab",
+  #     "filter.overallStatus": "NOT_YET_RECRUITING|RECRUITING",
+    #     aka: filter.advanced = (AREA[OverallStatus]not_yet_recruiting OR AREA[OverallStatus]recruiting)
+  #     "filter.geo": "distance(47.611351,-122.337297,13mi)",
+  #     "filter.advanced": "AREA[MinimumAge]RANGE[MIN, 29 years] AND AREA[MaximumAge]RANGE[29 years, MAX] AND (AREA[Sex]all OR AREA[Sex]male OR AREA[Sex]female) AND (AREA[StudyType]interventional OR AREA[StudyType]observational)",
+  #     "fields": "NCTId|BriefTitle|OfficialTitle|BriefSummary|DetailedDescription|OverallStatus|StartDate|PrimaryCompletionDate|CompletionDate|StudyFirstSubmitDate|LastUpdateSubmitDate|ConditionsModule|EligibilityCriteria|HealthyVolunteers|Sex|MinimumAge|MaximumAge|EnrollmentInfo"
+  # }
 
   results = []
 
